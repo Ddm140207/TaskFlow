@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow",
+  "description": "A modern, minimalist, and visually polished task manager designed for a university computer science portfolio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
