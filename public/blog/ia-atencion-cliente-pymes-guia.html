@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA para atención al cliente en pymes | TaskFlow</title>
+<meta name="description" content="Guía honesta para pymes que quieren usar IA en atención al cliente: qué automatizar primero, qué dejar en manos humanas y cómo medir si funcionó.">
+<link rel="canonical" href="https://taskflow-minimalist-manager.web.app/blog/ia-atencion-cliente-pymes-guia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IA para atención al cliente en pymes | TaskFlow">
+<meta property="og:description" content="Guía honesta para pymes que quieren usar IA en atención al cliente: qué automatizar primero, qué dejar en manos humanas y cómo medir si funcionó.">
+<meta property="og:url" content="https://taskflow-minimalist-manager.web.app/blog/ia-atencion-cliente-pymes-guia">
+<meta property="og:site_name" content="TaskFlow">
+<meta property="og:locale" content="es_CR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IA para atención al cliente en pymes | TaskFlow">
+<meta name="twitter:description" content="Guía honesta para pymes que quieren usar IA en atención al cliente: qué automatizar primero, qué dejar en manos humanas y cómo medir si funcionó.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"IA para atención al cliente en pymes: qué funciona y qué no","description":"Guía honesta para pymes que quieren usar IA en atención al cliente: qué automatizar primero, qué dejar en manos humanas y cómo medir si funcionó.","datePublished":"2026-11-16","dateModified":"2026-11-16","inLanguage":"es","mainEntityOfPage":"https://taskflow-minimalist-manager.web.app/blog/ia-atencion-cliente-pymes-guia","author":{"@type":"Organization","name":"TaskFlow"},"publisher":{"@type":"Organization","name":"TaskFlow"},"keywords":"IA atención al cliente pymes","articleSection":"Atención al cliente"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TaskFlow","item":"https://taskflow-minimalist-manager.web.app/"},{"@type":"ListItem","position":2,"name":"Artículos","item":"https://taskflow-minimalist-manager.web.app/blog"},{"@type":"ListItem","position":3,"name":"IA para atención al cliente en pymes: qué funciona y qué no","item":"https://taskflow-minimalist-manager.web.app/blog/ia-atencion-cliente-pymes-guia"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Necesito contratar a alguien para mantener la IA?","acceptedAnswer":{"@type":"Answer","text":"No con un agente bien implementado. Usted actualiza precios y horarios en un panel, y el agente los usa. Si necesita un ingeniero para cambiar un horario, la herramienta está mal diseñada."}},{"@type":"Question","name":"¿La IA reemplaza a mi equipo?","acceptedAnswer":{"@type":"Answer","text":"Reemplaza el trabajo repetido. En la práctica el equipo deja de responder \"¿a qué hora abren?\" y empieza a atender los casos que sí necesitan criterio."}},{"@type":"Question","name":"¿Cuánto tarda una implementación razonable?","acceptedAnswer":{"@type":"Answer","text":"Una pyme con un canal y diez preguntas frecuentes puede estar operando en una semana. Lo que tarda es la revisión de respuestas, no la configuración."}}]}</script>
+</head>
+<body>
+<div class="glass-background"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/"><span class="brand__dot"></span><span>TaskFlow</span></a>
+    <nav class="site-nav">
+      <a href="/blog">Artículos</a>
+      <a href="/blog#categorias">Categorías</a>
+      <a class="site-nav__cta" href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=nav" target="_blank" rel="noopener">Kora AI</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="breadcrumb" aria-label="Ruta">
+    <a href="/">TaskFlow</a> <span>/</span> <a href="/blog">Artículos</a> <span>/</span> <span>Atención al cliente</span>
+  </nav>
+
+  <article class="post">
+    <header class="post__header">
+      <span class="card__category" style="--tone:#6366f1">Atención al cliente</span>
+      <h1>IA para atención al cliente en pymes: qué funciona y qué no</h1>
+      <p class="post__lead">La IA no arregla una atención al cliente desordenada: la acelera. Si las respuestas ya eran inconsistentes, el resultado es más inconsistencias por minuto. Esta guía ordena el trabajo real de una pyme que atiende por WhatsApp y correo, sin promesas de magia.</p>
+      <p class="post__meta">Publicado el 16 de noviembre de 2026 · 3 min de lectura</p>
+    </header>
+
+    <nav class="toc" aria-label="Contenido">
+  <p class="toc__title">En este artículo</p>
+  <ol>
+    <li><a href="#s1">Primero el proceso, después la herramienta</a></li>
+    <li><a href="#s2">Lo que la IA hace bien hoy</a></li>
+    <li><a href="#s3">Lo que todavía rompe la experiencia</a></li>
+    <li><a href="#s4">Cómo se mide en el primer mes</a></li>
+  </ol>
+</nav>
+    
+
+    <div class="prose">
+<section class="prose__section" id="s1">
+  <h2>Primero el proceso, después la herramienta</h2>
+  <p>Antes de elegir cualquier plataforma, escriba las diez preguntas que más recibe y la respuesta correcta de cada una. Ese documento es el activo, no el software. Una IA alimentada con respuestas claras resuelve entre el 40% y el 60% de los mensajes repetidos; una IA alimentada con suposiciones crea problemas nuevos.</p><p>Si su equipo no puede contestar esas diez preguntas por escrito, el problema es de información, no de tecnología.</p>
+</section>
+<section class="prose__section" id="s2">
+  <h2>Lo que la IA hace bien hoy</h2>
+  <ul><li><strong>Responder lo repetido:</strong> horarios, ubicación, precios de lista, cómo pagar, qué incluye un servicio.</li><li><strong>Calificar:</strong> distinguir una consulta de un reclamo y de una venta.</li><li><strong>Agendar:</strong> consultar disponibilidad real y confirmar una cita.</li><li><strong>Recordar:</strong> retomar un carrito o una cotización sin que nadie lo persiga.</li><li><strong>Transcribir:</strong> convertir una nota de voz en texto para el equipo.</li></ul>
+</section>
+<section class="prose__section" id="s3">
+  <h2>Lo que todavía rompe la experiencia</h2>
+  <p>Prometer resultados, negociar precios que nadie autorizó, resolver casos emocionales delicados y decidir excepciones. En esos puntos la IA debe callarse y abrir el caso.</p><blockquote><p>Regla práctica: la IA administra información y agenda; la persona administra el criterio y el conflicto.</p></blockquote>
+</section>
+<section class="prose__section" id="s4">
+  <h2>Cómo se mide en el primer mes</h2>
+  <p>Elija tres números antes de empezar: tiempo de primera respuesta, porcentaje de consultas resueltas sin intervención y porcentaje de conversaciones que terminan en una acción (cita, compra, cotización). Si los tres no mejoran, la automatización está decorando un problema.</p>
+</section>
+
+
+    </div>
+
+    <section class="faq" aria-label="Preguntas frecuentes">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Necesito contratar a alguien para mantener la IA?</summary>
+    <p>No con un agente bien implementado. Usted actualiza precios y horarios en un panel, y el agente los usa. Si necesita un ingeniero para cambiar un horario, la herramienta está mal diseñada.</p>
+  </details>
+  <details>
+    <summary>¿La IA reemplaza a mi equipo?</summary>
+    <p>Reemplaza el trabajo repetido. En la práctica el equipo deja de responder &quot;¿a qué hora abren?&quot; y empieza a atender los casos que sí necesitan criterio.</p>
+  </details>
+  <details>
+    <summary>¿Cuánto tarda una implementación razonable?</summary>
+    <p>Una pyme con un canal y diez preguntas frecuentes puede estar operando en una semana. Lo que tarda es la revisión de respuestas, no la configuración.</p>
+  </details>
+</section>
+
+    <aside class="cta">
+      <p class="cta__eyebrow">Del artículo a la operación</p>
+      <h2>Si el cuello de botella es la conversación, hay un agente para eso</h2>
+      <p>Kora AI atiende WhatsApp, correo e Instagram con flujos deterministas y herramientas conectadas, y deja el caso en manos de una persona cuando hace falta.</p>
+      <p class="cta__links"><a class="kora-link" href="https://kora-agent.com/ia-atencion-cliente?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=ia-atencion-cliente-pymes-guia" target="_blank" rel="noopener">atención al cliente con IA</a> · <a class="kora-link" href="https://kora-agent.com/agente-ia-whatsapp?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=ia-atencion-cliente-pymes-guia" target="_blank" rel="noopener">un agente que atiende WhatsApp</a></p>
+    </aside>
+
+    <section class="related" aria-label="Sigue leyendo">
+      <h2>Sigue leyendo</h2>
+      <div class="cards cards--grid">
+<a class="card card--small" href="/blog/tiempo-de-primera-respuesta">
+  <span class="card__category" style="--tone:#0f766e">Datos y métricas</span>
+  <span class="card__title">Tiempo de primera respuesta: el número que decide si le escriben de nuevo</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/cuando-la-ia-no-debe-responder">
+  <span class="card__category" style="--tone:#6366f1">Atención al cliente</span>
+  <span class="card__title">Cuándo la IA no debe responder: cinco casos que debe frenar</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/errores-al-automatizar-atencion">
+  <span class="card__category" style="--tone:#0ea5e9">Automatización</span>
+  <span class="card__title">Siete errores que arruinan una automatización de atención al cliente</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><strong>TaskFlow</strong> es un gestor de tareas con IA. Para atender clientes y automatizar conversaciones, <a href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=footer" target="_blank" rel="noopener">Kora AI</a>.</p>
+    <p class="site-footer__meta"><a href="/blog">Todos los artículos</a> · <a href="/">TaskFlow</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

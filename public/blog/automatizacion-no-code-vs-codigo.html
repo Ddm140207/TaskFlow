@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatización no-code o con código | TaskFlow</title>
+<meta name="description" content="Ventajas y límites de automatizar con herramientas visuales frente a escribir código, con criterios de volumen, mantenimiento y equipo.">
+<link rel="canonical" href="https://taskflow-minimalist-manager.web.app/blog/automatizacion-no-code-vs-codigo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Automatización no-code o con código | TaskFlow">
+<meta property="og:description" content="Ventajas y límites de automatizar con herramientas visuales frente a escribir código, con criterios de volumen, mantenimiento y equipo.">
+<meta property="og:url" content="https://taskflow-minimalist-manager.web.app/blog/automatizacion-no-code-vs-codigo">
+<meta property="og:site_name" content="TaskFlow">
+<meta property="og:locale" content="es_CR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Automatización no-code o con código | TaskFlow">
+<meta name="twitter:description" content="Ventajas y límites de automatizar con herramientas visuales frente a escribir código, con criterios de volumen, mantenimiento y equipo.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"No-code o código: cuándo cada uno deja de ser una buena idea","description":"Ventajas y límites de automatizar con herramientas visuales frente a escribir código, con criterios de volumen, mantenimiento y equipo.","datePublished":"2026-09-07","dateModified":"2026-09-07","inLanguage":"es","mainEntityOfPage":"https://taskflow-minimalist-manager.web.app/blog/automatizacion-no-code-vs-codigo","author":{"@type":"Organization","name":"TaskFlow"},"publisher":{"@type":"Organization","name":"TaskFlow"},"keywords":"automatización no-code o con código","articleSection":"Comparativas"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TaskFlow","item":"https://taskflow-minimalist-manager.web.app/"},{"@type":"ListItem","position":2,"name":"Artículos","item":"https://taskflow-minimalist-manager.web.app/blog"},{"@type":"ListItem","position":3,"name":"No-code o código: cuándo cada uno deja de ser una buena idea","item":"https://taskflow-minimalist-manager.web.app/blog/automatizacion-no-code-vs-codigo"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿No-code escala?","acceptedAnswer":{"@type":"Answer","text":"Escala en volumen si la herramienta lo soporta, pero no en complejidad. Los flujos de cien pasos no se mantienen."}},{"@type":"Question","name":"¿Se puede mezclar?","acceptedAnswer":{"@type":"Answer","text":"Es lo más común: no-code para el pegamento, código para el núcleo del proceso."}},{"@type":"Question","name":"¿Cuándo conviene reescribir un flujo no-code?","acceptedAnswer":{"@type":"Answer","text":"Cuando hay que revisarlo antes de cada cambio por miedo a romper otra cosa, o cuando dos personas distintas ya no pueden explicar qué hace. Ahí la reescritura es mantenimiento, no capricho."}}]}</script>
+</head>
+<body>
+<div class="glass-background"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/"><span class="brand__dot"></span><span>TaskFlow</span></a>
+    <nav class="site-nav">
+      <a href="/blog">Artículos</a>
+      <a href="/blog#categorias">Categorías</a>
+      <a class="site-nav__cta" href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=nav" target="_blank" rel="noopener">Kora AI</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="breadcrumb" aria-label="Ruta">
+    <a href="/">TaskFlow</a> <span>/</span> <a href="/blog">Artículos</a> <span>/</span> <span>Comparativas</span>
+  </nav>
+
+  <article class="post">
+    <header class="post__header">
+      <span class="card__category" style="--tone:#8b5cf6">Comparativas</span>
+      <h1>No-code o código: cuándo cada uno deja de ser una buena idea</h1>
+      <p class="post__lead">No-code resuelve el 80% de las automatizaciones de un negocio pequeño en una tarde. El problema aparece en el 20% restante, que suele ser justo el que más valor tiene.</p>
+      <p class="post__meta">Publicado el 7 de septiembre de 2026 · 3 min de lectura</p>
+    </header>
+
+    <nav class="toc" aria-label="Contenido">
+  <p class="toc__title">En este artículo</p>
+  <ol>
+    <li><a href="#s1">Donde no-code gana</a></li>
+    <li><a href="#s2">Donde no-code se rompe</a></li>
+    <li><a href="#s3">El costo de cambiar después</a></li>
+    <li><a href="#s4">La regla práctica</a></li>
+    <li><a href="#s5">El mismo caso por los dos caminos</a></li>
+    <li><a href="#s6">La deuda que nadie escribe</a></li>
+    <li><a href="#s7">Cómo se decide sin discutir de tecnología</a></li>
+  </ol>
+</nav>
+    
+
+    <div class="prose">
+<section class="prose__section" id="s1">
+  <h2>Donde no-code gana</h2>
+  <p>Conectar formularios, hojas de cálculo, avisos y correos. Procesos simples, cambios frecuentes y equipos sin desarrolladores.</p>
+</section>
+<section class="prose__section" id="s2">
+  <h2>Donde no-code se rompe</h2>
+  <p>Lógica con muchas condiciones, manejo de errores fino, volumen alto y datos sensibles. Ahí el flujo visual se vuelve un diagrama imposible de auditar.</p>
+</section>
+<section class="prose__section" id="s3">
+  <h2>El costo de cambiar después</h2>
+  <p>Una automatización no-code que crece termina reemplazada. Si se sabe desde el principio, conviene diseñar la parte crítica con código desde el inicio.</p>
+</section>
+<section class="prose__section" id="s4">
+  <h2>La regla práctica</h2>
+  <p>No-code para lo que cambia seguido y no tiene consecuencias graves. Código para lo que toca dinero, datos personales o compromisos con clientes.</p>
+</section>
+<section class="prose__section" id="s5">
+  <h2>El mismo caso por los dos caminos</h2>
+  <p>Un formulario de contacto que debe crear la ficha del cliente, avisar al responsable y agendar una llamada. En no-code son tres conectores y una tarde: sirve, y si el negocio cambia de herramienta de agenda se rehace en otra tarde. Con código son dos días y una función que hay que mantener, pero el cambio de agenda se resuelve en una línea.</p>
+</section>
+<section class="prose__section" id="s6">
+  <h2>La deuda que nadie escribe</h2>
+  <p>En no-code la deuda es de configuración: veinte flujos con nombres que nadie entiende y un dueño original que ya no trabaja ahí. En código la deuda es de mantenimiento: dependencias que hay que actualizar y errores que solo entiende quien lo escribió. Las dos existen; conviene saber cuál se puede pagar.</p>
+</section>
+<section class="prose__section" id="s7">
+  <h2>Cómo se decide sin discutir de tecnología</h2>
+  <p>Escriba el flujo en una hoja con sus pasos y sus excepciones. Si son menos de diez pasos y dos excepciones, cualquier herramienta visual sirve. Si hay más, o si alguno mueve dinero, la parte crítica se escribe con código y el resto puede seguir visual.</p>
+</section>
+<ol class="steps">
+  <li class="step">
+    <span class="step__number">1</span>
+    <div><h3>Cuente los pasos y las excepciones</h3><p>Menos de diez pasos y dos excepciones es territorio de no-code. Más, o una excepción que toca dinero, pide código.</p></div>
+  </li>
+  <li class="step">
+    <span class="step__number">2</span>
+    <div><h3>Pregunte quién va a mantenerlo</h3><p>Si la persona que lo mantiene no programa, el flujo tiene que caber en una herramienta visual y estar documentado en una página.</p></div>
+  </li>
+  <li class="step">
+    <span class="step__number">3</span>
+    <div><h3>Escriba con código solo el núcleo</h3><p>La validación, el cálculo y el registro crítico. El aviso, el correo de confirmación y el panel pueden quedarse en no-code.</p></div>
+  </li>
+  <li class="step">
+    <span class="step__number">4</span>
+    <div><h3>Deje una salida documentada</h3><p>Qué hace el flujo, de dónde toma los datos y cómo se apaga. Sin eso, el equipo no se atreve a tocarlo y termina rodeándolo.</p></div>
+  </li>
+</ol>
+<div class="table-wrap"><table>
+  <thead><tr><th>Criterio</th><th>No-code</th><th>Código</th></tr></thead>
+  <tbody><tr><td>Tiempo al primer resultado</td><td>Una tarde</td><td>Días o semanas</td></tr><tr><td>Lógica compleja</td><td>Se vuelve un diagrama ilegible</td><td>Se maneja</td></tr><tr><td>Cambios frecuentes</td><td>Rápidos</td><td>Requieren desarrollador</td></tr><tr><td>Quién lo mantiene</td><td>El equipo operativo</td><td>Alguien que programa</td></tr><tr><td>Riesgo de deuda</td><td>Configuración que nadie entiende</td><td>Dependencias y conocimiento concentrado</td></tr></tbody>
+</table></div>
+    </div>
+
+    <section class="faq" aria-label="Preguntas frecuentes">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿No-code escala?</summary>
+    <p>Escala en volumen si la herramienta lo soporta, pero no en complejidad. Los flujos de cien pasos no se mantienen.</p>
+  </details>
+  <details>
+    <summary>¿Se puede mezclar?</summary>
+    <p>Es lo más común: no-code para el pegamento, código para el núcleo del proceso.</p>
+  </details>
+  <details>
+    <summary>¿Cuándo conviene reescribir un flujo no-code?</summary>
+    <p>Cuando hay que revisarlo antes de cada cambio por miedo a romper otra cosa, o cuando dos personas distintas ya no pueden explicar qué hace. Ahí la reescritura es mantenimiento, no capricho.</p>
+  </details>
+</section>
+
+    <aside class="cta">
+      <p class="cta__eyebrow">Del artículo a la operación</p>
+      <h2>Si el cuello de botella es la conversación, hay un agente para eso</h2>
+      <p>Kora AI atiende WhatsApp, correo e Instagram con flujos deterministas y herramientas conectadas, y deja el caso en manos de una persona cuando hace falta.</p>
+      <p class="cta__links"><a class="kora-link" href="https://kora-agent.com/ia-agentica-negocios?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=automatizacion-no-code-vs-codigo" target="_blank" rel="noopener">automatizar sin ahogarse</a></p>
+    </aside>
+
+    <section class="related" aria-label="Sigue leyendo">
+      <h2>Sigue leyendo</h2>
+      <div class="cards cards--grid">
+<a class="card card--small" href="/blog/plataforma-vs-desarrollo-propio">
+  <span class="card__category" style="--tone:#8b5cf6">Comparativas</span>
+  <span class="card__title">Plataforma o desarrollo propio: el cálculo que casi nadie hace completo</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/integraciones-que-si-sirven">
+  <span class="card__category" style="--tone:#0ea5e9">Automatización</span>
+  <span class="card__title">Integraciones: las tres que de verdad cambian la operación</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/webhooks-explicados-negocio">
+  <span class="card__category" style="--tone:#0ea5e9">Automatización</span>
+  <span class="card__title">Qué es un webhook, explicado para quien no programa</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><strong>TaskFlow</strong> es un gestor de tareas con IA. Para atender clientes y automatizar conversaciones, <a href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=footer" target="_blank" rel="noopener">Kora AI</a>.</p>
+    <p class="site-footer__meta"><a href="/blog">Todos los artículos</a> · <a href="/">TaskFlow</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

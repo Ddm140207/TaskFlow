@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasa de respuesta en atención | TaskFlow</title>
+<meta name="description" content="Qué es la tasa de respuesta, cómo se calcula por canal y por qué un 70% parece bueno y significa que tres de cada diez se fueron.">
+<link rel="canonical" href="https://taskflow-minimalist-manager.web.app/blog/tasa-de-respuesta">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tasa de respuesta en atención | TaskFlow">
+<meta property="og:description" content="Qué es la tasa de respuesta, cómo se calcula por canal y por qué un 70% parece bueno y significa que tres de cada diez se fueron.">
+<meta property="og:url" content="https://taskflow-minimalist-manager.web.app/blog/tasa-de-respuesta">
+<meta property="og:site_name" content="TaskFlow">
+<meta property="og:locale" content="es_CR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tasa de respuesta en atención | TaskFlow">
+<meta name="twitter:description" content="Qué es la tasa de respuesta, cómo se calcula por canal y por qué un 70% parece bueno y significa que tres de cada diez se fueron.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tasa de respuesta: el número que revela si estás perdiendo clientes sin saberlo","description":"Qué es la tasa de respuesta, cómo se calcula por canal y por qué un 70% parece bueno y significa que tres de cada diez se fueron.","datePublished":"2026-08-20","dateModified":"2026-08-20","inLanguage":"es","mainEntityOfPage":"https://taskflow-minimalist-manager.web.app/blog/tasa-de-respuesta","author":{"@type":"Organization","name":"TaskFlow"},"publisher":{"@type":"Organization","name":"TaskFlow"},"keywords":"tasa de respuesta en atención","articleSection":"Datos y métricas"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TaskFlow","item":"https://taskflow-minimalist-manager.web.app/"},{"@type":"ListItem","position":2,"name":"Artículos","item":"https://taskflow-minimalist-manager.web.app/blog"},{"@type":"ListItem","position":3,"name":"Tasa de respuesta: el número que revela si estás perdiendo clientes sin saberlo","item":"https://taskflow-minimalist-manager.web.app/blog/tasa-de-respuesta"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Responder a todo es sostenible?","acceptedAnswer":{"@type":"Answer","text":"Con automatización de lo repetido, sí. Sin ella, el volumen crece y la tasa baja."}},{"@type":"Question","name":"¿Incluye mensajes de proveedores?","acceptedAnswer":{"@type":"Answer","text":"No. Se mide sobre mensajes de clientes o posibles clientes. Mezclar categorías distorsiona el número."}}]}</script>
+</head>
+<body>
+<div class="glass-background"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/"><span class="brand__dot"></span><span>TaskFlow</span></a>
+    <nav class="site-nav">
+      <a href="/blog">Artículos</a>
+      <a href="/blog#categorias">Categorías</a>
+      <a class="site-nav__cta" href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=nav" target="_blank" rel="noopener">Kora AI</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="breadcrumb" aria-label="Ruta">
+    <a href="/">TaskFlow</a> <span>/</span> <a href="/blog">Artículos</a> <span>/</span> <span>Datos y métricas</span>
+  </nav>
+
+  <article class="post">
+    <header class="post__header">
+      <span class="card__category" style="--tone:#0f766e">Datos y métricas</span>
+      <h1>Tasa de respuesta: el número que revela si estás perdiendo clientes sin saberlo</h1>
+      <p class="post__lead">Ningún negocio cree que ignora clientes. La tasa de respuesta dice otra cosa: cuántos mensajes recibieron una respuesta con contenido, no solo un acuse.</p>
+      <p class="post__meta">Publicado el 20 de agosto de 2026 · 3 min de lectura</p>
+    </header>
+
+    <nav class="toc" aria-label="Contenido">
+  <p class="toc__title">En este artículo</p>
+  <ol>
+    <li><a href="#s1">Cómo se calcula</a></li>
+    <li><a href="#s2">Por qué el promedio engaña</a></li>
+    <li><a href="#s3">El piso aceptable</a></li>
+    <li><a href="#s4">Cómo subirla sin contratar</a></li>
+  </ol>
+</nav>
+    <div class="stats-grid">
+  <div class="stat">
+    <span class="stat__value">95%</span>
+    <span class="stat__label">piso razonable de respuesta</span>
+  </div>
+  <div class="stat">
+    <span class="stat__value">1 de 3</span>
+    <span class="stat__label">mensajes que llegan fuera de horario</span>
+  </div>
+  <div class="stat">
+    <span class="stat__value">0</span>
+    <span class="stat__label">acuses que cuentan como respuesta</span>
+  </div>
+  <div class="stat">
+    <span class="stat__value">48 h</span>
+    <span class="stat__label">para que un mensaje sin respuesta se vuelva una pérdida</span>
+  </div>
+</div>
+
+    <div class="prose">
+<section class="prose__section" id="s1">
+  <h2>Cómo se calcula</h2>
+  <p>Conversaciones con al menos una respuesta útil, dividido entre conversaciones recibidas, por canal y por franja horaria. Un acuse automático no cuenta.</p>
+</section>
+<section class="prose__section" id="s2">
+  <h2>Por qué el promedio engaña</h2>
+  <p>Un 90% de respuesta en horario de oficina y un 20% fuera de horario pueden dar 70% promedio. Ese promedio esconde que la mayoría de los mensajes llegan justo cuando nadie está.</p>
+</section>
+<section class="prose__section" id="s3">
+  <h2>El piso aceptable</h2>
+  <p>Por debajo de 95% hay clientes perdidos sin explicación. Cada punto que falta es una persona que decidió escribir a otro lado.</p>
+</section>
+<section class="prose__section" id="s4">
+  <h2>Cómo subirla sin contratar</h2>
+  <p>Respuesta inmediata automática con información útil fuera de horario, y una sola persona responsable de revisar lo pendiente al abrir. Son dos cambios, no un proyecto.</p>
+</section>
+
+
+    </div>
+
+    <section class="faq" aria-label="Preguntas frecuentes">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Responder a todo es sostenible?</summary>
+    <p>Con automatización de lo repetido, sí. Sin ella, el volumen crece y la tasa baja.</p>
+  </details>
+  <details>
+    <summary>¿Incluye mensajes de proveedores?</summary>
+    <p>No. Se mide sobre mensajes de clientes o posibles clientes. Mezclar categorías distorsiona el número.</p>
+  </details>
+</section>
+
+    <aside class="cta">
+      <p class="cta__eyebrow">Del artículo a la operación</p>
+      <h2>Si el cuello de botella es la conversación, hay un agente para eso</h2>
+      <p>Kora AI atiende WhatsApp, correo e Instagram con flujos deterministas y herramientas conectadas, y deja el caso en manos de una persona cuando hace falta.</p>
+      <p class="cta__links"><a class="kora-link" href="https://kora-agent.com/ia-atencion-cliente?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=tasa-de-respuesta" target="_blank" rel="noopener">no dejar mensajes sin respuesta</a></p>
+    </aside>
+
+    <section class="related" aria-label="Sigue leyendo">
+      <h2>Sigue leyendo</h2>
+      <div class="cards cards--grid">
+<a class="card card--small" href="/blog/metricas-de-ventas-por-canal">
+  <span class="card__category" style="--tone:#0f766e">Datos y métricas</span>
+  <span class="card__title">Ventas por canal: cómo saber de dónde viene el dinero</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/medir-sin-crm">
+  <span class="card__category" style="--tone:#0f766e">Datos y métricas</span>
+  <span class="card__title">Medir sin CRM: el mínimo viable con una hoja y dos preguntas</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/cuanto-cuesta-un-cliente-perdido">
+  <span class="card__category" style="--tone:#0f766e">Datos y métricas</span>
+  <span class="card__title">Cuánto cuesta un mensaje sin responder: el cálculo que cambia prioridades</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><strong>TaskFlow</strong> es un gestor de tareas con IA. Para atender clientes y automatizar conversaciones, <a href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=footer" target="_blank" rel="noopener">Kora AI</a>.</p>
+    <p class="site-footer__meta"><a href="/blog">Todos los artículos</a> · <a href="/">TaskFlow</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

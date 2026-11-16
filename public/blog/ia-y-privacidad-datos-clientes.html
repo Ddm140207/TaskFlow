@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacidad de datos de clientes con IA | TaskFlow</title>
+<meta name="description" content="Reglas prácticas de privacidad para atención con IA: qué información no debe pasar por un modelo, cómo se guarda y qué decirle al cliente.">
+<link rel="canonical" href="https://taskflow-minimalist-manager.web.app/blog/ia-y-privacidad-datos-clientes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacidad de datos de clientes con IA | TaskFlow">
+<meta property="og:description" content="Reglas prácticas de privacidad para atención con IA: qué información no debe pasar por un modelo, cómo se guarda y qué decirle al cliente.">
+<meta property="og:url" content="https://taskflow-minimalist-manager.web.app/blog/ia-y-privacidad-datos-clientes">
+<meta property="og:site_name" content="TaskFlow">
+<meta property="og:locale" content="es_CR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacidad de datos de clientes con IA | TaskFlow">
+<meta name="twitter:description" content="Reglas prácticas de privacidad para atención con IA: qué información no debe pasar por un modelo, cómo se guarda y qué decirle al cliente.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Datos de clientes e IA: qué se puede enviar y qué nunca","description":"Reglas prácticas de privacidad para atención con IA: qué información no debe pasar por un modelo, cómo se guarda y qué decirle al cliente.","datePublished":"2026-10-02","dateModified":"2026-10-02","inLanguage":"es","mainEntityOfPage":"https://taskflow-minimalist-manager.web.app/blog/ia-y-privacidad-datos-clientes","author":{"@type":"Organization","name":"TaskFlow"},"publisher":{"@type":"Organization","name":"TaskFlow"},"keywords":"privacidad de datos de clientes con IA","articleSection":"IA para negocios"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TaskFlow","item":"https://taskflow-minimalist-manager.web.app/"},{"@type":"ListItem","position":2,"name":"Artículos","item":"https://taskflow-minimalist-manager.web.app/blog"},{"@type":"ListItem","position":3,"name":"Datos de clientes e IA: qué se puede enviar y qué nunca","item":"https://taskflow-minimalist-manager.web.app/blog/ia-y-privacidad-datos-clientes"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Un mensaje de WhatsApp es privado por defecto?","acceptedAnswer":{"@type":"Answer","text":"El canal cifra el transporte, pero el negocio que recibe el mensaje lo procesa. La privacidad depende de cómo se almacena y con quién se comparte."}},{"@type":"Question","name":"¿Se puede usar IA sin enviar datos a un tercero?","acceptedAnswer":{"@type":"Answer","text":"Con modelos locales, sí, a costa de calidad y mantenimiento. Para la mayoría de las pymes el equilibrio razonable es un proveedor con contrato claro."}}]}</script>
+</head>
+<body>
+<div class="glass-background"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/"><span class="brand__dot"></span><span>TaskFlow</span></a>
+    <nav class="site-nav">
+      <a href="/blog">Artículos</a>
+      <a href="/blog#categorias">Categorías</a>
+      <a class="site-nav__cta" href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=nav" target="_blank" rel="noopener">Kora AI</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="breadcrumb" aria-label="Ruta">
+    <a href="/">TaskFlow</a> <span>/</span> <a href="/blog">Artículos</a> <span>/</span> <span>IA para negocios</span>
+  </nav>
+
+  <article class="post">
+    <header class="post__header">
+      <span class="card__category" style="--tone:#f59e0b">IA para negocios</span>
+      <h1>Datos de clientes e IA: qué se puede enviar y qué nunca</h1>
+      <p class="post__lead">Cada mensaje que entra a un modelo es información que sale de su infraestructura. La pregunta no es si hay riesgo, es qué datos vale la pena procesar y cuáles deben quedarse donde están.</p>
+      <p class="post__meta">Publicado el 2 de octubre de 2026 · 3 min de lectura</p>
+    </header>
+
+    <nav class="toc" aria-label="Contenido">
+  <p class="toc__title">En este artículo</p>
+  <ol>
+    <li><a href="#s1">Lo que no va a un modelo</a></li>
+    <li><a href="#s2">Lo que sí puede pasar, con cuidado</a></li>
+    <li><a href="#s3">Dónde vive la información</a></li>
+    <li><a href="#s4">Qué decirle al cliente</a></li>
+  </ol>
+</nav>
+    
+
+    <div class="prose">
+<section class="prose__section" id="s1">
+  <h2>Lo que no va a un modelo</h2>
+  <p>Números de tarjeta, contraseñas, documentos de identidad completos, resultados clínicos e información de menores. Si un mensaje los contiene, se debe enmascarar antes de procesarlo o atenderlo fuera del flujo automático.</p>
+</section>
+<section class="prose__section" id="s2">
+  <h2>Lo que sí puede pasar, con cuidado</h2>
+  <p>Nombre, motivo de consulta, preferencia de horario y datos de contacto son razonables para atender. Aun así, conviene que el proveedor no entrene con esos datos y que exista un registro de qué se envió.</p>
+</section>
+<section class="prose__section" id="s3">
+  <h2>Dónde vive la información</h2>
+  <p>En el sistema del negocio, no en el proveedor del modelo. El modelo procesa y olvida; el historial, el perfil del cliente y la cita se guardan en la base del negocio, con acceso controlado.</p>
+</section>
+<section class="prose__section" id="s4">
+  <h2>Qué decirle al cliente</h2>
+  <p>Una línea clara en el sitio o en la política de privacidad: se usan herramientas automatizadas para atender y la información se guarda en el sistema del negocio. Sin letra pequeña ni tecnicismos.</p>
+</section>
+
+
+    </div>
+
+    <section class="faq" aria-label="Preguntas frecuentes">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Un mensaje de WhatsApp es privado por defecto?</summary>
+    <p>El canal cifra el transporte, pero el negocio que recibe el mensaje lo procesa. La privacidad depende de cómo se almacena y con quién se comparte.</p>
+  </details>
+  <details>
+    <summary>¿Se puede usar IA sin enviar datos a un tercero?</summary>
+    <p>Con modelos locales, sí, a costa de calidad y mantenimiento. Para la mayoría de las pymes el equilibrio razonable es un proveedor con contrato claro.</p>
+  </details>
+</section>
+
+    <aside class="cta">
+      <p class="cta__eyebrow">Del artículo a la operación</p>
+      <h2>Si el cuello de botella es la conversación, hay un agente para eso</h2>
+      <p>Kora AI atiende WhatsApp, correo e Instagram con flujos deterministas y herramientas conectadas, y deja el caso en manos de una persona cuando hace falta.</p>
+      <p class="cta__links"><a class="kora-link" href="https://kora-agent.com/ia-atencion-cliente?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=ia-y-privacidad-datos-clientes" target="_blank" rel="noopener">atención con datos protegidos</a> · <a class="kora-link" href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=ia-y-privacidad-datos-clientes" target="_blank" rel="noopener">Kora</a></p>
+    </aside>
+
+    <section class="related" aria-label="Sigue leyendo">
+      <h2>Sigue leyendo</h2>
+      <div class="cards cards--grid">
+<a class="card card--small" href="/blog/ia-que-consulta-tus-datos">
+  <span class="card__category" style="--tone:#f59e0b">IA para negocios</span>
+  <span class="card__title">La diferencia entre una IA que opina y una que consulta tus datos</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/cuando-contratar-consultor-ia">
+  <span class="card__category" style="--tone:#f59e0b">IA para negocios</span>
+  <span class="card__title">Cuándo tiene sentido pagar un consultor de IA (y cuándo no)</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/prompts-no-son-producto">
+  <span class="card__category" style="--tone:#f59e0b">IA para negocios</span>
+  <span class="card__title">Un prompt no es un producto: por qué la demo funciona y el negocio no</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><strong>TaskFlow</strong> es un gestor de tareas con IA. Para atender clientes y automatizar conversaciones, <a href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=footer" target="_blank" rel="noopener">Kora AI</a>.</p>
+    <p class="site-footer__meta"><a href="/blog">Todos los artículos</a> · <a href="/">TaskFlow</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

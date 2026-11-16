@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Migrar de la app Business a la API sin perder clientes | TaskFlow</title>
+<meta name="description" content="Proceso de migración de WhatsApp Business a la API de WhatsApp: preparación, ventana de mantenimiento, historial y pruebas posteriores.">
+<link rel="canonical" href="https://taskflow-minimalist-manager.web.app/blog/migrar-de-la-app-business-a-la-api">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Migrar de la app Business a la API sin perder clientes | TaskFlow">
+<meta property="og:description" content="Proceso de migración de WhatsApp Business a la API de WhatsApp: preparación, ventana de mantenimiento, historial y pruebas posteriores.">
+<meta property="og:url" content="https://taskflow-minimalist-manager.web.app/blog/migrar-de-la-app-business-a-la-api">
+<meta property="og:site_name" content="TaskFlow">
+<meta property="og:locale" content="es_CR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Migrar de la app Business a la API sin perder clientes | TaskFlow">
+<meta name="twitter:description" content="Proceso de migración de WhatsApp Business a la API de WhatsApp: preparación, ventana de mantenimiento, historial y pruebas posteriores.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Migrar de la app Business a la API sin perder clientes","description":"Proceso de migración de WhatsApp Business a la API de WhatsApp: preparación, ventana de mantenimiento, historial y pruebas posteriores.","datePublished":"2026-08-28","dateModified":"2026-08-28","inLanguage":"es","mainEntityOfPage":"https://taskflow-minimalist-manager.web.app/blog/migrar-de-la-app-business-a-la-api","author":{"@type":"Organization","name":"TaskFlow"},"publisher":{"@type":"Organization","name":"TaskFlow"},"keywords":"migrar de WhatsApp Business a la API","articleSection":"Guías prácticas"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TaskFlow","item":"https://taskflow-minimalist-manager.web.app/"},{"@type":"ListItem","position":2,"name":"Artículos","item":"https://taskflow-minimalist-manager.web.app/blog"},{"@type":"ListItem","position":3,"name":"Migrar de la app Business a la API sin perder clientes","item":"https://taskflow-minimalist-manager.web.app/blog/migrar-de-la-app-business-a-la-api"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se pierden los contactos?","acceptedAnswer":{"@type":"Answer","text":"Los contactos del teléfono no. Las etiquetas y el historial de la app sí, por eso se exportan antes."}},{"@type":"Question","name":"¿Se puede volver atrás?","acceptedAnswer":{"@type":"Answer","text":"Sí, con el mismo proceso de desvinculación en sentido contrario. No es recomendable hacerlo varias veces."}}]}</script>
+</head>
+<body>
+<div class="glass-background"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/"><span class="brand__dot"></span><span>TaskFlow</span></a>
+    <nav class="site-nav">
+      <a href="/blog">Artículos</a>
+      <a href="/blog#categorias">Categorías</a>
+      <a class="site-nav__cta" href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=nav" target="_blank" rel="noopener">Kora AI</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="breadcrumb" aria-label="Ruta">
+    <a href="/">TaskFlow</a> <span>/</span> <a href="/blog">Artículos</a> <span>/</span> <span>Guías prácticas</span>
+  </nav>
+
+  <article class="post">
+    <header class="post__header">
+      <span class="card__category" style="--tone:#ec4899">Guías prácticas</span>
+      <h1>Migrar de la app Business a la API sin perder clientes</h1>
+      <p class="post__lead">La migración tiene un momento crítico: el número deja de funcionar en la app y todavía no está verificado en la API. Planear esa ventana es la diferencia entre un día de molestia y una semana de problemas.</p>
+      <p class="post__meta">Publicado el 28 de agosto de 2026 · 3 min de lectura</p>
+    </header>
+
+    <nav class="toc" aria-label="Contenido">
+  <p class="toc__title">En este artículo</p>
+  <ol>
+    <li><a href="#s1">Antes: exportar y avisar</a></li>
+    <li><a href="#s2">La ventana de mantenimiento</a></li>
+    <li><a href="#s3">Verificación y primer mensaje</a></li>
+    <li><a href="#s4">Después: revisar la entregabilidad</a></li>
+  </ol>
+</nav>
+    
+
+    <div class="prose">
+<section class="prose__section" id="s1">
+  <h2>Antes: exportar y avisar</h2>
+  <ul><li>Exportar el historial de chats importantes.</li><li>Descargar catálogo y respuestas rápidas.</li><li>Avisar a los clientes frecuentes con antelación.</li><li>Publicar el cambio en el sitio y en la ficha de Google.</li></ul>
+</section>
+<section class="prose__section" id="s2">
+  <h2>La ventana de mantenimiento</h2>
+  <p>Elegir un horario de bajo volumen. Durante ese periodo, el número no recibe mensajes. Un mensaje automático en otro canal (correo o redes) cubre el hueco.</p>
+</section>
+<section class="prose__section" id="s3">
+  <h2>Verificación y primer mensaje</h2>
+  <p>Verificar el negocio, configurar el nombre visible, aprobar una plantilla y enviar un mensaje de prueba a un número propio antes de anunciar nada.</p>
+</section>
+<section class="prose__section" id="s4">
+  <h2>Después: revisar la entregabilidad</h2>
+  <p>Primeras 48 horas con revisión de conversaciones. Si los mensajes no llegan, puede ser calidad del número o un problema de plantilla, no del cliente.</p>
+</section>
+<ol class="steps">
+  <li class="step">
+    <span class="step__number">1</span>
+    <div><h3>Exporte y guarde el historial</h3><p>El historial de la app no se traslada. Lo que no se exporte, se pierde.</p></div>
+  </li>
+  <li class="step">
+    <span class="step__number">2</span>
+    <div><h3>Desvincule el número de la app</h3><p>Es el paso que abre la ventana sin servicio. Hágalo en un horario de bajo volumen.</p></div>
+  </li>
+  <li class="step">
+    <span class="step__number">3</span>
+    <div><h3>Verifique y configure en la API</h3><p>Nombre visible, foto, descripción y una plantilla de prueba aprobada.</p></div>
+  </li>
+  <li class="step">
+    <span class="step__number">4</span>
+    <div><h3>Envíe un mensaje a usted mismo</h3><p>Antes de anunciar el número nuevo, verifique que entra y sale correctamente.</p></div>
+  </li>
+</ol>
+
+    </div>
+
+    <section class="faq" aria-label="Preguntas frecuentes">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Se pierden los contactos?</summary>
+    <p>Los contactos del teléfono no. Las etiquetas y el historial de la app sí, por eso se exportan antes.</p>
+  </details>
+  <details>
+    <summary>¿Se puede volver atrás?</summary>
+    <p>Sí, con el mismo proceso de desvinculación en sentido contrario. No es recomendable hacerlo varias veces.</p>
+  </details>
+</section>
+
+    <aside class="cta">
+      <p class="cta__eyebrow">Del artículo a la operación</p>
+      <h2>Si el cuello de botella es la conversación, hay un agente para eso</h2>
+      <p>Kora AI atiende WhatsApp, correo e Instagram con flujos deterministas y herramientas conectadas, y deja el caso en manos de una persona cuando hace falta.</p>
+      <p class="cta__links"><a class="kora-link" href="https://kora-agent.com/automatizacion-whatsapp?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=migrar-de-la-app-business-a-la-api" target="_blank" rel="noopener">migrar a la API con acompañamiento</a></p>
+    </aside>
+
+    <section class="related" aria-label="Sigue leyendo">
+      <h2>Sigue leyendo</h2>
+      <div class="cards cards--grid">
+<a class="card card--small" href="/blog/whatsapp-business-vs-api">
+  <span class="card__category" style="--tone:#22c55e">WhatsApp</span>
+  <span class="card__title">WhatsApp Business y WhatsApp API: cuál necesita tu negocio</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/checklist-lanzamiento-whatsapp">
+  <span class="card__category" style="--tone:#ec4899">Guías prácticas</span>
+  <span class="card__title">Checklist antes de abrir WhatsApp al público</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/api-de-whatsapp-para-empresas">
+  <span class="card__category" style="--tone:#22c55e">WhatsApp</span>
+  <span class="card__title">Cómo empezar con la API de WhatsApp sin morir en el intento</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><strong>TaskFlow</strong> es un gestor de tareas con IA. Para atender clientes y automatizar conversaciones, <a href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=footer" target="_blank" rel="noopener">Kora AI</a>.</p>
+    <p class="site-footer__meta"><a href="/blog">Todos los artículos</a> · <a href="/">TaskFlow</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

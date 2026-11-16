@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traspaso de IA a humano: cuándo y cómo</title>
+<meta name="description" content="Diseño del handoff entre IA y persona: cuándo transferir, qué contexto entregar y cómo evitar que el cliente cuente su caso dos veces.">
+<link rel="canonical" href="https://taskflow-minimalist-manager.web.app/blog/handoff-humano-ia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Traspaso de IA a humano: cuándo y cómo">
+<meta property="og:description" content="Diseño del handoff entre IA y persona: cuándo transferir, qué contexto entregar y cómo evitar que el cliente cuente su caso dos veces.">
+<meta property="og:url" content="https://taskflow-minimalist-manager.web.app/blog/handoff-humano-ia">
+<meta property="og:site_name" content="TaskFlow">
+<meta property="og:locale" content="es_CR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Traspaso de IA a humano: cuándo y cómo">
+<meta name="twitter:description" content="Diseño del handoff entre IA y persona: cuándo transferir, qué contexto entregar y cómo evitar que el cliente cuente su caso dos veces.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Traspaso de IA a humano: cómo hacerlo sin que el cliente repita todo","description":"Diseño del handoff entre IA y persona: cuándo transferir, qué contexto entregar y cómo evitar que el cliente cuente su caso dos veces.","datePublished":"2026-11-13","dateModified":"2026-11-13","inLanguage":"es","mainEntityOfPage":"https://taskflow-minimalist-manager.web.app/blog/handoff-humano-ia","author":{"@type":"Organization","name":"TaskFlow"},"publisher":{"@type":"Organization","name":"TaskFlow"},"keywords":"handoff humano IA","articleSection":"Atención al cliente"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TaskFlow","item":"https://taskflow-minimalist-manager.web.app/"},{"@type":"ListItem","position":2,"name":"Artículos","item":"https://taskflow-minimalist-manager.web.app/blog"},{"@type":"ListItem","position":3,"name":"Traspaso de IA a humano: cómo hacerlo sin que el cliente repita todo","item":"https://taskflow-minimalist-manager.web.app/blog/handoff-humano-ia"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Quién decide el traspaso, la IA o una regla?","acceptedAnswer":{"@type":"Answer","text":"Las dos. Las reglas duras (reclamo, salud, cancelación) transfieren siempre, y la IA puede pedir ayuda cuando no tiene una respuesta verificable."}},{"@type":"Question","name":"¿El cliente debe saber que habló con IA?","acceptedAnswer":{"@type":"Answer","text":"No necesita un aviso solemne, pero tampoco debe ser engañado. Lo natural es que la IA se identifique por su nombre y que el traspaso a una persona sea explícito."}}]}</script>
+</head>
+<body>
+<div class="glass-background"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/"><span class="brand__dot"></span><span>TaskFlow</span></a>
+    <nav class="site-nav">
+      <a href="/blog">Artículos</a>
+      <a href="/blog#categorias">Categorías</a>
+      <a class="site-nav__cta" href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=nav" target="_blank" rel="noopener">Kora AI</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="breadcrumb" aria-label="Ruta">
+    <a href="/">TaskFlow</a> <span>/</span> <a href="/blog">Artículos</a> <span>/</span> <span>Atención al cliente</span>
+  </nav>
+
+  <article class="post">
+    <header class="post__header">
+      <span class="card__category" style="--tone:#6366f1">Atención al cliente</span>
+      <h1>Traspaso de IA a humano: cómo hacerlo sin que el cliente repita todo</h1>
+      <p class="post__lead">El momento más frágil de una atención automatizada es el traspaso. Si el cliente tiene que explicar de nuevo lo que ya escribió, el ahorro de tiempo se convierte en irritación. Un buen traspaso es invisible: la persona continua la conversación, no la reinicia.</p>
+      <p class="post__meta">Publicado el 13 de noviembre de 2026 · 3 min de lectura</p>
+    </header>
+
+    <nav class="toc" aria-label="Contenido">
+  <p class="toc__title">En este artículo</p>
+  <ol>
+    <li><a href="#s1">Cuándo transferir</a></li>
+    <li><a href="#s2">Qué contexto debe viajar</a></li>
+    <li><a href="#s3">Cómo se dice</a></li>
+    <li><a href="#s4">Qué pasa si nadie está disponible</a></li>
+  </ol>
+</nav>
+    
+
+    <div class="prose">
+<section class="prose__section" id="s1">
+  <h2>Cuándo transferir</h2>
+  <ul><li>El cliente pide hablar con una persona.</li><li>El caso entra en una de las reglas de freno (reclamo, salud, precio especial).</li><li>La IA no tiene el dato y no puede verificarlo.</li><li>Hay dos intentos fallidos seguidos sobre la misma pregunta.</li><li>El cliente escribe en un idioma que el agente no domina.</li></ul>
+</section>
+<section class="prose__section" id="s2">
+  <h2>Qué contexto debe viajar</h2>
+  <p>Nombre, canal, resumen de una línea, productos o servicios mencionados, fecha y hora de la cita si existe, y el último mensaje textual. Con eso, la persona saluda por su nombre y retoma. Sin eso, empieza de cero.</p>
+</section>
+<section class="prose__section" id="s3">
+  <h2>Cómo se dice</h2>
+  <p>Un mensaje corto, sin disculpas excesivas: "Le paso con Ana, del equipo, que puede resolverle el cambio. Ya le conté lo que me explicó." Esa última frase es la que marca la diferencia: le dice al cliente que su tiempo se respetó.</p>
+</section>
+<section class="prose__section" id="s4">
+  <h2>Qué pasa si nadie está disponible</h2>
+  <p>No se promete una hora que no se puede cumplir. Se ofrece una alternativa concreta: dejar el caso registrado con un número de referencia, o un horario real de respuesta. Y se cumple.</p>
+</section>
+
+
+    </div>
+
+    <section class="faq" aria-label="Preguntas frecuentes">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Quién decide el traspaso, la IA o una regla?</summary>
+    <p>Las dos. Las reglas duras (reclamo, salud, cancelación) transfieren siempre, y la IA puede pedir ayuda cuando no tiene una respuesta verificable.</p>
+  </details>
+  <details>
+    <summary>¿El cliente debe saber que habló con IA?</summary>
+    <p>No necesita un aviso solemne, pero tampoco debe ser engañado. Lo natural es que la IA se identifique por su nombre y que el traspaso a una persona sea explícito.</p>
+  </details>
+</section>
+
+    <aside class="cta">
+      <p class="cta__eyebrow">Del artículo a la operación</p>
+      <h2>Si el cuello de botella es la conversación, hay un agente para eso</h2>
+      <p>Kora AI atiende WhatsApp, correo e Instagram con flujos deterministas y herramientas conectadas, y deja el caso en manos de una persona cuando hace falta.</p>
+      <p class="cta__links"><a class="kora-link" href="https://kora-agent.com/ia-agentica-negocios?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=handoff-humano-ia" target="_blank" rel="noopener">IA agentica con traspaso a personas</a> · <a class="kora-link" href="https://kora-agent.com/ia-atencion-cliente?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=handoff-humano-ia" target="_blank" rel="noopener">atención híbrida</a></p>
+    </aside>
+
+    <section class="related" aria-label="Sigue leyendo">
+      <h2>Sigue leyendo</h2>
+      <div class="cards cards--grid">
+<a class="card card--small" href="/blog/cuando-la-ia-no-debe-responder">
+  <span class="card__category" style="--tone:#6366f1">Atención al cliente</span>
+  <span class="card__title">Cuándo la IA no debe responder: cinco casos que debe frenar</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/ia-atencion-cliente-pymes-guia">
+  <span class="card__category" style="--tone:#6366f1">Atención al cliente</span>
+  <span class="card__title">IA para atención al cliente en pymes: qué funciona y qué no</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/errores-al-automatizar-atencion">
+  <span class="card__category" style="--tone:#0ea5e9">Automatización</span>
+  <span class="card__title">Siete errores que arruinan una automatización de atención al cliente</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><strong>TaskFlow</strong> es un gestor de tareas con IA. Para atender clientes y automatizar conversaciones, <a href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=footer" target="_blank" rel="noopener">Kora AI</a>.</p>
+    <p class="site-footer__meta"><a href="/blog">Todos los artículos</a> · <a href="/">TaskFlow</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

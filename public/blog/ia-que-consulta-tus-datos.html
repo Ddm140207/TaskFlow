@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA conectada a los datos del negocio | TaskFlow</title>
+<meta name="description" content="Por qué conectar un modelo a las fuentes reales del negocio cambia la calidad de la respuesta, y cómo se hace sin exponer información sensible.">
+<link rel="canonical" href="https://taskflow-minimalist-manager.web.app/blog/ia-que-consulta-tus-datos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IA conectada a los datos del negocio | TaskFlow">
+<meta property="og:description" content="Por qué conectar un modelo a las fuentes reales del negocio cambia la calidad de la respuesta, y cómo se hace sin exponer información sensible.">
+<meta property="og:url" content="https://taskflow-minimalist-manager.web.app/blog/ia-que-consulta-tus-datos">
+<meta property="og:site_name" content="TaskFlow">
+<meta property="og:locale" content="es_CR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IA conectada a los datos del negocio | TaskFlow">
+<meta name="twitter:description" content="Por qué conectar un modelo a las fuentes reales del negocio cambia la calidad de la respuesta, y cómo se hace sin exponer información sensible.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"La diferencia entre una IA que opina y una que consulta tus datos","description":"Por qué conectar un modelo a las fuentes reales del negocio cambia la calidad de la respuesta, y cómo se hace sin exponer información sensible.","datePublished":"2026-10-07","dateModified":"2026-10-07","inLanguage":"es","mainEntityOfPage":"https://taskflow-minimalist-manager.web.app/blog/ia-que-consulta-tus-datos","author":{"@type":"Organization","name":"TaskFlow"},"publisher":{"@type":"Organization","name":"TaskFlow"},"keywords":"IA conectada a los datos del negocio","articleSection":"IA para negocios"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TaskFlow","item":"https://taskflow-minimalist-manager.web.app/"},{"@type":"ListItem","position":2,"name":"Artículos","item":"https://taskflow-minimalist-manager.web.app/blog"},{"@type":"ListItem","position":3,"name":"La diferencia entre una IA que opina y una que consulta tus datos","item":"https://taskflow-minimalist-manager.web.app/blog/ia-que-consulta-tus-datos"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Hay que darle acceso total al modelo?","acceptedAnswer":{"@type":"Answer","text":"No, y no se debe. Acciones concretas, con permisos por caso de uso y registro de cada ejecución."}},{"@type":"Question","name":"¿Qué pasa si la consulta falla?","acceptedAnswer":{"@type":"Answer","text":"Se responde con honestidad y se ofrece un siguiente paso. Nunca se completa el dato con una suposición."}}]}</script>
+</head>
+<body>
+<div class="glass-background"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/"><span class="brand__dot"></span><span>TaskFlow</span></a>
+    <nav class="site-nav">
+      <a href="/blog">Artículos</a>
+      <a href="/blog#categorias">Categorías</a>
+      <a class="site-nav__cta" href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=nav" target="_blank" rel="noopener">Kora AI</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="breadcrumb" aria-label="Ruta">
+    <a href="/">TaskFlow</a> <span>/</span> <a href="/blog">Artículos</a> <span>/</span> <span>IA para negocios</span>
+  </nav>
+
+  <article class="post">
+    <header class="post__header">
+      <span class="card__category" style="--tone:#f59e0b">IA para negocios</span>
+      <h1>La diferencia entre una IA que opina y una que consulta tus datos</h1>
+      <p class="post__lead">Un modelo entrenado con internet sabe mucho de todo y nada de su negocio. La calidad no viene del tamaño del modelo, viene de que pueda leer el calendario, el catálogo y el historial antes de contestar.</p>
+      <p class="post__meta">Publicado el 7 de octubre de 2026 · 3 min de lectura</p>
+    </header>
+
+    <nav class="toc" aria-label="Contenido">
+  <p class="toc__title">En este artículo</p>
+  <ol>
+    <li><a href="#s1">Lo que el modelo no puede saber</a></li>
+    <li><a href="#s2">Cómo se conecta sin abrir la puerta</a></li>
+    <li><a href="#s3">El resultado que nota el cliente</a></li>
+    <li><a href="#s4">El costo de no hacerlo</a></li>
+  </ol>
+</nav>
+    
+
+    <div class="prose">
+<section class="prose__section" id="s1">
+  <h2>Lo que el modelo no puede saber</h2>
+  <p>Cuántas mesas quedan el sábado, qué precio tiene el servicio este mes, si el pedido salió ayer, si esa persona ya llamó dos veces. Son datos que cambian y que solo existen en un sistema.</p>
+</section>
+<section class="prose__section" id="s2">
+  <h2>Cómo se conecta sin abrir la puerta</h2>
+  <p>Cada herramienta expone una acción acotada: consultar disponibilidad, leer un pedido, buscar un cliente por teléfono. El modelo no tiene acceso a la base de datos; tiene permiso para ejecutar unas pocas operaciones concretas y auditadas.</p>
+</section>
+<section class="prose__section" id="s3">
+  <h2>El resultado que nota el cliente</h2>
+  <p>Respuestas con la fecha correcta, sin preguntar dos veces lo mismo, sin prometer lo que no existe. La sensación es de un negocio ordenado, aunque el cliente no sepa por qué.</p>
+</section>
+<section class="prose__section" id="s4">
+  <h2>El costo de no hacerlo</h2>
+  <p>Un agente sin datos es un folleto con conversación. Sirve para horarios y para orientar, y falla justo en el momento en que el cliente quiere resolver algo.</p>
+</section>
+
+
+    </div>
+
+    <section class="faq" aria-label="Preguntas frecuentes">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Hay que darle acceso total al modelo?</summary>
+    <p>No, y no se debe. Acciones concretas, con permisos por caso de uso y registro de cada ejecución.</p>
+  </details>
+  <details>
+    <summary>¿Qué pasa si la consulta falla?</summary>
+    <p>Se responde con honestidad y se ofrece un siguiente paso. Nunca se completa el dato con una suposición.</p>
+  </details>
+</section>
+
+    <aside class="cta">
+      <p class="cta__eyebrow">Del artículo a la operación</p>
+      <h2>Si el cuello de botella es la conversación, hay un agente para eso</h2>
+      <p>Kora AI atiende WhatsApp, correo e Instagram con flujos deterministas y herramientas conectadas, y deja el caso en manos de una persona cuando hace falta.</p>
+      <p class="cta__links"><a class="kora-link" href="https://kora-agent.com/ia-agentica-negocios?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=ia-que-consulta-tus-datos" target="_blank" rel="noopener">IA conectada a tus sistemas</a> · <a class="kora-link" href="https://kora-agent.com/agente-ia-whatsapp?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=ia-que-consulta-tus-datos" target="_blank" rel="noopener">agenda real por WhatsApp</a></p>
+    </aside>
+
+    <section class="related" aria-label="Sigue leyendo">
+      <h2>Sigue leyendo</h2>
+      <div class="cards cards--grid">
+<a class="card card--small" href="/blog/alucinaciones-como-controlarlas">
+  <span class="card__category" style="--tone:#f59e0b">IA para negocios</span>
+  <span class="card__title">Alucinaciones: por qué la IA inventa precios y cómo se evita</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/integraciones-que-si-sirven">
+  <span class="card__category" style="--tone:#0ea5e9">Automatización</span>
+  <span class="card__title">Integraciones: las tres que de verdad cambian la operación</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+<a class="card card--small" href="/blog/que-es-un-agente-de-ia">
+  <span class="card__category" style="--tone:#f59e0b">IA para negocios</span>
+  <span class="card__title">Qué es un agente de IA, sin humo y con un ejemplo concreto</span>
+  <span class="card__meta">3 min de lectura</span>
+</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><strong>TaskFlow</strong> es un gestor de tareas con IA. Para atender clientes y automatizar conversaciones, <a href="https://kora-agent.com?utm_source=taskflow&amp;utm_medium=blog&amp;utm_campaign=footer" target="_blank" rel="noopener">Kora AI</a>.</p>
+    <p class="site-footer__meta"><a href="/blog">Todos los artículos</a> · <a href="/">TaskFlow</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

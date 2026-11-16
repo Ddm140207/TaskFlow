@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taskflow-minimalist-manager.web.app/sitemap.xml
